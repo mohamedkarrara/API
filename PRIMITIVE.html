@@ -65,13 +65,19 @@
 			context.strokeStyle = '#003300';
 			context.stroke();
         </script> 
-		
-        <script type="text/javascript">
-            var c=document.getElementById("myCanvas");
-            var ctx=c.getContext("2d");
-            ctx.rect(0,0,400,1000);
-            ctx.stroke();
-		</script>
+        <script>
+	    var canvas = document.getElementById('myCanvas-rect');
+			var context = canvas.getContext('2d');
+
+			context.beginPath();
+			context.rect(0, 0, 300, 150);
+			context.fillStyle = 'white';
+			context.fill();
+			context.lineWidth = 2;
+			context.strokeStyle = 'black';
+			context.stroke();
+	</script>	
+        
 		
 				  
     </head>
@@ -98,24 +104,13 @@
 			
 	
 				<div class="myAPI">
-					<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
-								Your browser does not support the HTML5 canvas tag.
-					</canvas>
-					
-					<script>
-						var canvas = document.getElementById('myCanvas');
-						var context = canvas.getContext('2d');
-
-						context.beginPath();
-						context.rect(0, 0, 300, 150);
-						context.fillStyle = 'white';
-						context.fill();
-						context.lineWidth = 2;
-						context.strokeStyle = 'black';
-						context.stroke();
-					</script>
+				<canvas id="myCanvas-rect" width="300" height="150">
+					Error 501: JavaScript in not supported or turned off in browser ! 
+				</canvas>	
 					
 				</div>
+					
+			</div>
 				
 			</div>
 		</div>
